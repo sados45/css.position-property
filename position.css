@@ -1,0 +1,51 @@
+/* div{ 
+    background-color: aqua;
+    width:200px;
+    height:200px;
+    border:1px solid red;
+}*/
+#first{
+    background-color: red;
+    width:100px;
+    height:100px;
+    /* display:inline-block;
+    position:relative;
+    left:213px; */
+    position:absolute;
+    right:5px;
+    bottom:300px;
+   /* eger position:absolute olursa artik verdigimiz siralamanin disinda rahat herekt ettirebiliriz. */
+}
+/* eger bir cerceve icine kutulari dahil etmek istersek div ile icerisine kutulari dahil etmeliyiz. bunun icin de position:relative ve absolute kullanmaliyiz. böyle bir durumda first kismi absolute olurken, cantiner:kismi relative olmali. */
+#container{
+    border:1px solid blue;
+    width:500px;
+    height:500px;
+    position:relative;
+    left:50px;
+    }
+
+#second{
+    background-color:green;
+     /* position:relative;  */
+     /* display:inline-block;
+     position:relative;
+     right:100px; */
+     position:absolute;
+     left:213px;
+     width:100px;
+     height:100px;
+}
+
+#third{
+    background-color:blue;
+    /* position:relative;
+    right:100px;
+    display:inline-block; */
+    width:100px;
+    height:100px;
+}/* bunlarin position lari statiktir.kendisi düzenine göre yerlertirdi.yukaridan asagi.../
+/* eger position:relative; left:20px; yazarsak soldan saga dogru 20 px iceriye kaydirir. top:50px denilirse ilgili kutucuk bireysel asagi kayar.
+ama margin-top:50px; yazilirsa top yekün asagi kayar alta dogru kutucuklarin hepsi. kutucuklar kirmizi,yesil,mavi.
+Genelde sadece ilgili kutunun asagi yukari sag sola dogru kaydirmasi icin ilk örnekteki uygulanir.
+position:relative; left:20px; gibi. */
